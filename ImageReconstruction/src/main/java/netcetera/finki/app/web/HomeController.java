@@ -142,15 +142,6 @@ public class HomeController {
 			@RequestParam(value = "laplaceThresholdValue", required = false) String laplaceThresholdValue,
 			@RequestParam("descriptor") String descriptor, @RequestParam("idWorkspace") String idWorkspace) {
 		long id = Long.parseLong(idWorkspace);
-		// double addOptVal = Double.parseDouble(additionalOptDetectorValue);
-		/*
-		 * System.out.println( name + " " + id + " " + detector + " " +
-		 * ds_scales + " " + ds_scalesValue + " " + ds_spacing+ " " +
-		 * ds_spacingValue + " " + descriptor + " "+ harrisThreshold);
-		 */
-
-		// workspaceJobService.addWorkspaceJob(name, id, detector,
-		// additionalOptions, descriptor, addOptVal);
 
 		String additionalDescriptorOptions = "";
 		if (ds_scales == null) {
